@@ -1,0 +1,30 @@
+@keyframes pendulumSwing {
+	0% {
+		transform: translateX(0) rotateZ(0deg);
+	}
+	25% {
+		transform: translateX(50px) rotateZ(15deg);
+	}
+	50% {
+		transform: translateX(0) rotateZ(0deg);
+	}
+	75% {
+		transform: translateX(-50px) rotateZ(-15deg);
+	}
+	100% {
+		transform: translateX(0) rotateZ(0deg);
+	}
+}
+
+.menu{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: -2rem;
+}
+
+.logo {
+	animation: pendulumSwing 3s ease-in-out ;
+}

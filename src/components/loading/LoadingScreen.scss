@@ -1,0 +1,15 @@
+.loading-container {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  z-index: 9999;
+  transition: transform 0.8s ease-in-out;
+}
+
+.loading-container.exit {
+  transform: translateY(-100%);
+}
