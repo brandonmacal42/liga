@@ -1,6 +1,7 @@
 import Menu from "./pages/menu/menu";
 import About from "./pages/about/about";
-import Skills from "./pages/laboratorio/laboratorio";
+import Laboratorio from "./pages/laboratorio/laboratorio";
+import Eventos from "./pages/eventos/eventos";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import WhatsappButton from "./components/whatsappButton/whatsappButton";
 import "./assets/images/image-removebg-preview.png";
@@ -20,7 +21,8 @@ function App() {
       <div>
         <Menu />
         <About />
-        <Skills />
+        <Laboratorio />
+        <Eventos />
         <WhatsappButton />
       </div>
     </>

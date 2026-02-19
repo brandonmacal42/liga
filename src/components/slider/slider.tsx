@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./slider.scss";
-import image1 from "../../assets/images/slide1.png";
-import image2 from "../../assets/images/slide2.png";
+import image1 from "../../assets/images/slide2.png";
+import image2 from "../../assets/images/slide1.png";
 import image3 from "../../assets/images/slide3.png";
 function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);

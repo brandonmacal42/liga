@@ -1,0 +1,32 @@
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scrollCarousel 20s linear infinite;
+}
+
+.carousel-item {
+  max-width: 350px; // mismo tamaño que tus cards
+  margin-right: 1.25rem;
+  flex: 0 0 auto;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+  }
+}
+
+@keyframes scrollCarousel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

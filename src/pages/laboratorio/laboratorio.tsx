@@ -5,8 +5,8 @@ function Laboratorio() {
     <>
       <div className="laboratorio">
         <h1 className="lab-title">Laboratorio </h1>
+        <LabItems />
       </div>
-      <LabItems />
     </>
   );
 }
