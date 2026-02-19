@@ -1,10 +1,16 @@
 import "./about.scss";
+import Items from "../../components/items/items";
+import ExpandedImage from "../../components/expandedImage/expandedImage";
+
 function About() {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>This is the about page.</p>
-    </div>
+    <>
+      <div className="about">
+        <h1 className="about-title">Primitive - Back 2 back</h1>
+        <Items />
+      </div>
+      <ExpandedImage />
+    </>
   );
 }
 

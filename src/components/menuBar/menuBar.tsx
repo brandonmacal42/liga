@@ -38,7 +38,7 @@ function MenuBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 30) {
         setIsFixed(true);
       } else {
         setIsFixed(false);

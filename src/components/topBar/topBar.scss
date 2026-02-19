@@ -1,19 +1,40 @@
 .topBar {
   width: 100vw;
   height: 5vh;
-  padding:20px;
-  background-color: #000000;
+  background-color: #000;
   display: flex;
-  justify-content: center;
+  justify-content: center; // centra el cuadro
   align-items: center;
-  margin: 0;
-  padding: 0;
+  font-size: 1rem;
+}
 
-  h1 {
-    color: #ffffff;
-    font-size: .8rem;
-    margin: 0;
-    text-align: center;
-	text-transform: uppercase;
+/* 🔲 El cuadrito visible */
+.scroll-box {
+  width: 300px;   // tamaño del cuadro visible
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+/* 📜 Contenido que se mueve */
+.scroll-content {
+  display: inline-flex;
+  gap: 2rem;
+  animation: scrollText 10s linear infinite;
+}
+
+.scroll-content span {
+  color: #fff;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+/* Animación */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

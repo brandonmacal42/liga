@@ -1,7 +1,8 @@
 import Menu from "./pages/menu/menu";
 import About from "./pages/about/about";
-import Skills from "./pages/skills/skills";
+import Skills from "./pages/laboratorio/laboratorio";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import WhatsappButton from "./components/whatsappButton/whatsappButton";
 import "./assets/images/image-removebg-preview.png";
 import "./assets/styles/App.scss";
 import LoadingScreen from "./components/loading/LoadingScreen";
@@ -20,6 +21,7 @@ function App() {
         <Menu />
         <About />
         <Skills />
+        <WhatsappButton />
       </div>
     </>
   );
